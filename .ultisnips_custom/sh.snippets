@@ -1,0 +1,108 @@
+snippet "loop array" "Iteration elements in array"
+# Iterate over an array in Bash
+for item in "${array[@]}"; do
+    echo "$item"
+done
+endsnippet
+
+snippet "return function value"
+# Define a function that returns a value
+function my_function() {
+    local result="Your result here"
+    echo "$result"
+}
+
+# Call the function and store the result in a variable
+result_variable=$(my_function)
+endsnippet
+
+snippet "if example" "If example" b
+if [[ -z "$string" ]]; then
+  echo "String is empty"
+elif [[ -n "$string" ]]; then
+  echo "String is not empty"
+fi
+endsnippet
+
+snippet "print variable"  "Print variable string in side string will need to cover with $()" b
+echo "I'm in $(pwd)"
+echo "I'm in `pwd`"  # obsolescent
+endsnippet
+
+snippet "declare array"
+Fruits=('Apple' 'Banana' 'Orange')
+Fruits[0]="Apple"
+Fruits[1]="Banana"
+Fruits[2]="Orange"
+endsnippet
+
+snippet "declare dict"
+# Define
+declare -A sounds
+# Access value
+sounds[dog]="bark"
+endsnippet
+
+snippet "loop dict" "Iteration over dictionary" b
+for key in "${!sounds[@]}"; do
+  echo "$key"
+done
+endsnippet
+
+snippet "switch case"
+case "$1" in
+start | up)
+  vagrant up
+  ;;
+*)
+  echo "Usage: $0 {start|stop|ssh}"
+  ;;
+esac
+endsnippet
+
+snippet args "Basic switch for script argument" b
+    while [[ $# -gt 0 ]]; do
+        case "$1" in
+            -f|--flag)
+                flag=1
+                shift
+                ;;
+            -a|--argument)
+                argument="$2"
+                shift 2
+                ;;
+            *)
+                break
+                ;;
+        esac
+    done
+endsnippet
+
+snippet "if-have-dir" "Check if directory exists" b
+if [ -d "$DIRECTORY" ]; then
+  # Control will enter here if $DIRECTORY exists.
+fi
+endsnippet
+
+snippet if-have-file "" b
+if [ -f "path/to/file" ]; then
+    echo "File exists"
+else
+    echo "File does not exist"
+fi
+endsnippet
+
+snippet alert-text "red tex" b
+echo -e "\e[31m${1:This is alert text}\e[0m"
+endsnippet
+
+
+snippet check-command "Chekc if command exist in shell" b
+if command -v git &>/dev/null; then
+    echo "git exists"
+else
+    echo "git does not exist"
+fi
+endsnippet
+
+

@@ -1,0 +1,13 @@
+snippet get_user_input "Contain validate input" b
+std::string name;
+while (true) {
+std::cout << "What your name: "  ;
+std::cin >> name;
+// Change condition here to break the loop
+if (name.length() >  2) break;
+else
+ std::cout << "Invalid name\n";
+}
+std::cout << "Hello, " << name << '\n';
+endsnippet
+

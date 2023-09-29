@@ -1,0 +1,21 @@
+.gh-head-menu,
+.gh-head-link {
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: -0.009em;
+}
+
+.site {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.site-content {
+  flex-grow: 1;
+  padding: 48px 0 96px;
+}
+
+.page-template .site-content {
+  padding-block: 0;
+}
