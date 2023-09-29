@@ -25,4 +25,4 @@ source $HOME/.config/nvim/modules/plugin-config/vim-prettier.vim
 
 
 
-colorscheme tokyonight-day
+colorscheme catppuccin-mocha
