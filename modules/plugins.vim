@@ -31,7 +31,6 @@ Plug 'nvim-telescope/telescope-project.nvim'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 " For debug program
 Plug 'mfussenegger/nvim-dap'
-Plug 'mfussenegger/nvim-jdtls'
 Plug 'Pocco81/dap-buddy.nvim'
 Plug 'rcarriga/nvim-dap-ui'
 Plug 'theHamsta/nvim-dap-virtual-text'
@@ -96,10 +95,19 @@ Plug 'junegunn/fzf.vim'
 Plug 'sheerun/vim-polyglot'
 Plug 'pangloss/vim-javascript'
 " Plug 'github/copilot.vim'
-Plug 'uiiaoo/java-syntax.vim'
-Plug 'ray-x/web-tools.nvim'
-" Syntax check
-" Plug 'neomake/neomake'
+
+" For live server but now not current work
+" Plug 'ray-x/web-tools.nvim'
+
+" Css color display
 Plug 'brenoprata10/nvim-highlight-colors'
-Plug 'artur-shaik/vim-Javacomplete2'
+
+
+" Java complete: hard to config
+" Plug 'mfussenegger/nvim-jdtls'
+ 
+" Plug 'neomake/neomake'
+" Syntax check
+Plug 'uiiaoo/java-syntax.vim'
+" Plug 'artur-shaik/vim-Javacomplete2'
 call plug#end()

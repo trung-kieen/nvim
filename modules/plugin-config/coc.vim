@@ -1,9 +1,9 @@
 " coc config
-"   \ 'coc-java',
 
 let g:coc_global_extensions = [
   \ 'coc-snippets',
   \ 'coc-pairs',
+  \ 'coc-java',
   \ 'coc-tsserver',
   \ 'coc-eslint', 
   \ 'coc-prettier', 
