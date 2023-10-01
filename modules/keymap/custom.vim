@@ -4,9 +4,10 @@ let g:user_emmet_mode='i'
 
 nnoremap <silent> <C-m> :NvimTreeToggle <CR>
 
-" Save file 
-imap <C-s> <esc>  :w <CR>  
-nmap <C-s>  :w <CR> 
+
+" Map <C-s> in normal and insert mode for specific file types
+nnoremap <C-s> :w<CR>
+inoremap <C-s> <Esc>:w<CR>
 
 " Find the same word for current buffer
 nnoremap <leader>F :let @/=''\|call inputsave()\|let @/ = input('Search: ')\|call inputrestore()<CR>1
@@ -38,8 +39,7 @@ nnoremap <C-f> :Telescope live_grep<CR>
 inoremap <C-f> <esc> :Telescope live_grep<CR>
 
 " Save and format
-imap <silent> ;p :Prettier<CR> :w <CR> 
-nmap <silent> ;p :Prettier<CR> :w <CR> 
+nnoremap <silent> ;p :call CocActionAsync('runCommand', 'editor.action.formatDocument')<CR>
 
 " Search command with Telescope 
 nnoremap  ;f :Telescope find_files<CR>

@@ -106,9 +106,14 @@ Plug 'brenoprata10/nvim-highlight-colors'
 " Java complete: hard to config
 " Plug 'mfussenegger/nvim-jdtls'
 
-" A syntax check but may be cau problem
-" Plug 'neomake/neomake'
+" A syntax check but may be cau problem, disable if neovim have java file
+" problem
+Plug 'neomake/neomake'
 " Syntax check
 Plug 'uiiaoo/java-syntax.vim'
-" Plug 'artur-shaik/vim-Javacomplete2'
+
+" Remove this plug if java cause problems
+Plug 'artur-shaik/vim-Javacomplete2'
+
+
 call plug#end()

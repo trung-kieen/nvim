@@ -5,5 +5,5 @@ let g:prettier#quickfix_auto_focus = 0
 command! -nargs=0 Prettier :CocCommand prettier.formatFile
 " run prettier on save
 let g:prettier#autoformat = 1 
-autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.less,*.scss,*.json,*.graphql,*.md,*.vue,*.yaml,*.html PrettierAsync
+autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.less,*.scss,*.json,*.graphql,*.md,*.vue,*.yaml,*.html  PrettierAsync
 
