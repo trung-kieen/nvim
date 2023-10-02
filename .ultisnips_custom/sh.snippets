@@ -108,3 +108,17 @@ endsnippet
 snippet notify "Description" b
 notify-send -h string:fgcolor:#C8CAFE "${1:All repo have been updated to github.}"
 endsnippet
+
+
+
+snippet Iterate-folder-file "Loop file in folder by folder path" b
+for file in ${1:/path/to/folder/*}; do
+    # Your code here, for example:
+    echo "Processing $file"
+done
+endsnippet
+
+snippet script-dir "Description" 
+${1:DIR}="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+endsnippet
+

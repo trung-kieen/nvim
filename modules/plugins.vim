@@ -99,6 +99,9 @@ Plug 'pangloss/vim-javascript'
 " For live server but now not current work
 " Plug 'ray-x/web-tools.nvim'
 
+" Manage workspace
+Plug 'ahmedkhalf/project.nvim' 
+
 " Css color display
 Plug 'brenoprata10/nvim-highlight-colors'
 
@@ -115,5 +118,6 @@ Plug 'uiiaoo/java-syntax.vim'
 " Remove this plug if java cause problems
 Plug 'artur-shaik/vim-Javacomplete2'
 
-
+" Improve motion
+Plug 'bkad/CamelCaseMotion'
 call plug#end()

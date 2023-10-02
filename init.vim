@@ -22,5 +22,6 @@ source $HOME/.config/nvim/modules/plugin-config/nvimtree.vim
 source $HOME/.config/nvim/modules/plugin-config/rainbowToggle.vim
 source $HOME/.config/nvim/modules/plugin-config/ultisnips.vim
 source $HOME/.config/nvim/modules/plugin-config/vim-prettier.vim
+source $HOME/.config/nvim/modules/plugin-config/CamelCaseMotion.vim
 
-colorscheme tokyonight-day
+colorscheme catppuccin-mocha
