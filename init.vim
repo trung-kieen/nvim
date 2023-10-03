@@ -24,4 +24,4 @@ source $HOME/.config/nvim/modules/plugin-config/ultisnips.vim
 source $HOME/.config/nvim/modules/plugin-config/vim-prettier.vim
 source $HOME/.config/nvim/modules/plugin-config/CamelCaseMotion.vim
 
-colorscheme catppuccin-mocha
+colorscheme tokyonight-day
