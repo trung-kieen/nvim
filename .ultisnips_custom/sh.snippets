@@ -1,11 +1,11 @@
-snippet "loop array" "Iteration elements in array"
+snippet loop-array "Iteration elements in array"
 # Iterate over an array in Bash
 for item in "${array[@]}"; do
     echo "$item"
 done
 endsnippet
 
-snippet "return function value"
+snippet return-function-value
 # Define a function that returns a value
 function my_function() {
     local result="Your result here"
@@ -16,7 +16,7 @@ function my_function() {
 result_variable=$(my_function)
 endsnippet
 
-snippet "if example" "If example" b
+snippet if-example "If example"
 if [[ -z "$string" ]]; then
   echo "String is empty"
 elif [[ -n "$string" ]]; then
@@ -24,32 +24,32 @@ elif [[ -n "$string" ]]; then
 fi
 endsnippet
 
-snippet "print variable"  "Print variable string in side string will need to cover with $()" b
+snippet print-variable  "Print variable string in side string will need to cover with $()" 
 echo "I'm in $(pwd)"
 echo "I'm in `pwd`"  # obsolescent
 endsnippet
 
-snippet "declare array"
+snippet declare-array
 Fruits=('Apple' 'Banana' 'Orange')
 Fruits[0]="Apple"
 Fruits[1]="Banana"
 Fruits[2]="Orange"
 endsnippet
 
-snippet "declare dict"
+snippet declare-dict
 # Define
 declare -A sounds
 # Access value
 sounds[dog]="bark"
 endsnippet
 
-snippet "loop dict" "Iteration over dictionary" b
+snippet loop-dict "Iteration over dictionary" 
 for key in "${!sounds[@]}"; do
   echo "$key"
 done
 endsnippet
 
-snippet "switch case"
+snippet switch-case
 case "$1" in
 start | up)
   vagrant up
@@ -60,7 +60,7 @@ start | up)
 esac
 endsnippet
 
-snippet args "Basic switch for script argument" b
+snippet args "Basic switch for script argument" 
     while [[ $# -gt 0 ]]; do
         case "$1" in
             -f|--flag)
@@ -78,13 +78,13 @@ snippet args "Basic switch for script argument" b
     done
 endsnippet
 
-snippet "if-have-dir" "Check if directory exists" b
+snippet if-have-dir "Check if directory exists" 
 if [ -d "$DIRECTORY" ]; then
   # Control will enter here if $DIRECTORY exists.
 fi
 endsnippet
 
-snippet if-have-file "" b
+snippet if-have-file "Check if file is exists" 
 if [ -f "path/to/file" ]; then
     echo "File exists"
 else
@@ -97,7 +97,7 @@ echo -e "\e[31m${1:This is alert text}\e[0m"
 endsnippet
 
 
-snippet check-command "Chekc if command exist in shell" b
+snippet check-command "Check if command exist in shell" 
 if command -v git &>/dev/null; then
     echo "git exists"
 else
@@ -105,13 +105,13 @@ else
 fi
 endsnippet
 
-snippet notify "Description" b
+snippet notify "Description"
 notify-send -h string:fgcolor:#C8CAFE "${1:All repo have been updated to github.}"
 endsnippet
 
 
 
-snippet Iterate-folder-file "Loop file in folder by folder path" b
+snippet iterate-folder-file "Loop file in folder by folder path" b
 for file in ${1:/path/to/folder/*}; do
     # Your code here, for example:
     echo "Processing $file"

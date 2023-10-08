@@ -52,10 +52,15 @@ nnoremap  \\ :Telescope buffers<CR>
 nnoremap ;/ :argdo %s/foo/bar/g
 
 
+imap <Tab>     <Plug>(ultisnips-expand)
+smap <Tab>     <Plug>(ultisnips-expand)
 
-let g:UltiSnipsExpandTrigger = '<tab>'
-let g:UltiSnipsJumpForwardTrigger = '<C-b>'
-let g:UltiSnipsJumpBackwardTrigger = '<C-z>'
+let g:UltiSnipsExpandTrigger="<tab>"
+
+" Fuck it not work
+let g:UltiSnipsJumpForwardTrigger='<tab>'
+let g:UltiSnipsJumpBackwardTrigger='<s-tab>'
+" let g:UltiSnipsJumpBackwardTrigger='<c-k>'
 
 " Search Snippets from custome snippets folder and vim-snippet plug
 nnoremap <A-s> :Snippets<CR>

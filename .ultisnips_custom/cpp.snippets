@@ -11,4 +11,33 @@ else
 std::cout << "Hello, " << name << '\n';
 endsnippet
 
+snippet gs "Getter and Setter" b
+${2:Type} ${3:className}::get${1:PropertyName}(){
+    return this->${1/./\l$0/};
+}
+void ${3}::set${1:PropertyName}(const ${2} &${1/./\l$0/}) {
+    this->${1/./\l$0/} = ${1/./\l$0/};
+}
+// TODO: Put Function prototype to class plugin method ${0}
+${2} get${1:PropertyName}();
+void set${1:PropertyName}(const ${2} &${1/./\l$0/});
+endsnippet
+
+snippet gs-constructor "Generate getter and setter methods prototype in class implementation" 
+${2:Type} get${1:PropertyName}();
+void set${1:PropertyName}(const ${2} &${1/./\l$0/});
+endsnippet	
+
+
+snippet getter "C++ Getter Method"
+int get${1:Variable}() {
+    return this->${1/./\l$0/};
+}
+endsnippet
+
+snippet setter "C++ Setter Method"
+void set${1:Name}(const int  ${1/./\l$0/}) {
+    this->${1/./\l$0/} = ${1/./\l$0/};
+}
+endsnippet
 

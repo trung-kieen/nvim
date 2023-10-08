@@ -26,7 +26,7 @@ Plug 'mattn/emmet-vim'
 Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.1' }
 "Plug 'nvim-lua/popup.nvim'
 Plug 'nvim-telescope/telescope-fzy-native.nvim'
-Plug 'nvim-telescope/telescope-project.nvim'
+" Plug 'nvim-telescope/telescope-project.nvim'
 
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 " For debug program
@@ -100,7 +100,7 @@ Plug 'pangloss/vim-javascript'
 " Plug 'ray-x/web-tools.nvim'
 
 " Manage workspace
-Plug 'ahmedkhalf/project.nvim' 
+" Plug 'ahmedkhalf/project.nvim' 
 
 " Css color display
 Plug 'brenoprata10/nvim-highlight-colors'

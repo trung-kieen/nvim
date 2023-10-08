@@ -282,12 +282,12 @@ require('nvim-highlight-colors').setup {}
 --     update_root = true
 --   },
 -- })
-require("project_nvim").setup {
+-- require("project_nvim").setup {
   -- your configuration comes here
   -- or leave it empty to use the default settings
   -- refer to the configuration section below
-}
-require('telescope').load_extension('projects')
+-- }
+-- require('telescope').load_extension('projects')
 EOF
 
 

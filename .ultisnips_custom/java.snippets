@@ -22,3 +22,32 @@ snippet array-hellper "Like vector in cpp and link list in Python this will allo
 ArrayList<String> lines = new ArrayList<>();
 endsnippet
 
+snippet swing-launcher "File to run swing gui it mean run a ui application" 
+import  javax.swing.*;
+public class ${1:AppLauncher} {
+    public static  void main(String args[]){
+    SwingUtilities.invokeLater(new Runnable() {
+        @Override
+        public void run() {
+            new AppGui().setVisible(true);
+        }
+    });
+    }
+
+}
+endsnippet
+snippet JFrame-setup "Setup base for gui application" 
+import javax.swing.*;
+
+public class ${1:AppGui}  extends JFrame {
+    public  AppGui() {
+
+        super("My weather app");
+        setDefaultCloseOperation(EXIT_ON_CLOSE);
+        // setSize(450, 650);
+        setLocationRelativeTo(null);
+        setLayout(null);
+        setResizable(false);
+    }
+}
+endsnippet
