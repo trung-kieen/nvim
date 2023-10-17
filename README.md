@@ -55,3 +55,5 @@ Using ps1 file please check this [repo](https://github.com/ayamir/nvimdots).
 `init.vim.backup` is old config that all config store in one file. Later i decided to split into many files in folder includes.
 
 # Hotkeys
+# Error
+Telescope work not properly,  try `:PlugUpdate` .

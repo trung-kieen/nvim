@@ -23,7 +23,7 @@ Plug 'nvim-lua/plenary.nvim'
 Plug 'HerringtonDarkholme/yats.vim' " TS Syntax
 " ---------------- MY CUSTOME PLUG -------------------
 Plug 'mattn/emmet-vim'
-Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.1' }
+Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.4' }
 "Plug 'nvim-lua/popup.nvim'
 Plug 'nvim-telescope/telescope-fzy-native.nvim'
 " Plug 'nvim-telescope/telescope-project.nvim'

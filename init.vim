@@ -11,6 +11,10 @@ source $HOME/.config/nvim/modules/keymap/keymaps.vim
 source $HOME/.config/nvim/modules/keymap/modern_cpp.vim
 source $HOME/.config/nvim/modules/keymap/custom.vim
 source $HOME/.config/nvim/modules/keymap/run_file.vim
+source $HOME/.config/nvim/modules/keymap/telescope.vim
+" source $HOME/.config/nvim/modules/keymap/ctrlp.vim
+
+
 
 source $HOME/.config/nvim/modules/plugin-config/airline_theme.vim
 source $HOME/.config/nvim/modules/plugin-config/coc.vim
@@ -24,4 +28,4 @@ source $HOME/.config/nvim/modules/plugin-config/ultisnips.vim
 source $HOME/.config/nvim/modules/plugin-config/vim-prettier.vim
 source $HOME/.config/nvim/modules/plugin-config/CamelCaseMotion.vim
 
-colorscheme tokyonight-day
+colorscheme catppuccin-mocha

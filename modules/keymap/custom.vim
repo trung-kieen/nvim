@@ -33,20 +33,9 @@ inoremap <A-S-j> <Esc>:m+<CR>
 
 
 
-nnoremap <C-p> :Telescope find_files<CR>
-inoremap <C-p> <esc> :Telescope find_files<CR>
-nnoremap <C-f> :Telescope live_grep<CR>
-inoremap <C-f> <esc> :Telescope live_grep<CR>
-
 " Save and format
 nnoremap <silent> ;p :call CocActionAsync('runCommand', 'editor.action.formatDocument')<CR>
 
-" Search command with Telescope 
-nnoremap  ;f :Telescope find_files<CR>
-nnoremap  ;c :Telescope commands<CR>
-nnoremap  ;r :Telescope live_grep<CR>
-nnoremap  \\ :Telescope buffers<CR>
-" nnoremap  ;; :Telescope help_tags<CR>
 
 " Find and replace in current pwd recursive
 nnoremap ;/ :argdo %s/foo/bar/g
@@ -74,7 +63,6 @@ inoremap <C-t> <Esc>:Vista!!<CR>
 
 
 nnoremap <F10> :normal zi<CR>
-nnoremap <A-p> :Telescope projects<CR>
 
 
 
