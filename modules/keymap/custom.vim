@@ -13,7 +13,7 @@ vnoremap <A-4> :s/\d\+/\=submatch(0)+1/g<CR>gv
 " Save and format feature
 " Uncomment to change between Autoformat and coc format action
 " nnoremap <silent> <leader>p :call CocActionAsync('runCommand', 'editor.action.formatDocument')<CR>
-nnoremap <silent> <leader>p :Autoformat<CR>
+nnoremap <silent> <leader>fm :Autoformat<CR>
 
 " Toogle folding code
 " nnoremap <F10> :normal zi<CR>
