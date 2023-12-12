@@ -16,8 +16,6 @@ If you encounter a Python provider error, resolve it by installing or upgrading 
 ```bash
 python3 -m pip install --user --upgrade pynvim
 ```
-# Keymapping
-# Keymapping
 | Key Mapping              | Mode   | Action                                  |
 |--------------------------|--------|-----------------------------------------|
 | `<leader>s`              | Normal | Open Snippets                           |
