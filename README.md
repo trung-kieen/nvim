@@ -31,3 +31,17 @@ python3 -m pip install --user --upgrade pynvim
 | `<leader>fb`             | Normal | Open Telescope buffers                  |
 | `<leader>fh`             | Normal | Open Telescope help_tags                |
 ```
+# Keymapping
+| Key Mapping              | Mode   | Action                                  |
+|--------------------------|--------|-----------------------------------------|
+| `<leader>s`              | Normal | Open Snippets                           |
+| `<leader>fm`             | Normal | Autoformat                              |
+| `<leader>p`              | Normal | Open Telescope commands                  |
+| `<C-p>`                  | Normal | Open Telescope find_files                |
+| `<C-p>`                  | Insert | Exit Insert mode and open find_files in Telescope |
+| `<C-f>`                  | Normal | Open Telescope live_grep                |
+| `<C-f>`                  | Insert | Exit Insert mode and open live_grep in Telescope |
+| `<leader>ff`             | Normal | Open Telescope find_files                |
+| `<leader>fg`             | Normal | Open Telescope live_grep                |
+| `<leader>fb`             | Normal | Open Telescope buffers                  |
+| `<leader>fh`             | Normal | Open Telescope help_tags                |
