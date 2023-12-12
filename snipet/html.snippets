@@ -1,0 +1,30 @@
+extends javascript
+snippet jquery "Add simple jquery lib in html file add this to head tag" b
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+endsnippet
+
+snippet "bootstrap" "Add bootstrap to html file" b
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+endsnippet
+
+snippet "form"  "Create simple form in html" b
+<form action="${2:example.com/path}" method="${2:POST}">
+	<label for="first_name">First Name:</label>
+	<input type="text" id="first_name" name="first_name">
+	<button type="submit">Submit</button>
+</form>
+endsnippet
+
+snippet js-add "Add this line to the head tag of html file" b
+<script src="js-file.js" defer></script>
+endsnippet
+
+snippet external-css "All style for html file put this in head tag" b
+<link rel="stylesheet" href="style.css">
+endsnippet
+
+snippet external-js "Add this line to the head tag of html file" b
+<script src="script.js" defer></script>
+endsnippet
+

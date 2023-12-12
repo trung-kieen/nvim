@@ -13,7 +13,6 @@ let g:coc_global_extensions = [
   \ 'coc-clangd',
   \ 'coc-stylelint',
   \ 'coc-markdownlint',
-  \ 'coc-tabnine',
   \ 'coc-sh',
   \ 'coc-texlab',
   \ 'coc-vimtex',
@@ -27,9 +26,9 @@ let g:coc_global_extensions = [
   \ 'coc-snippets'
   \ ]
 
+  " \ 'coc-tabnine',
 " Add status line support, for integration with other plugin, checkout `:h coc-status`
 set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
-"let g:colorizer_auto_color = 1
 
 " Disable emmet when not use file suffic html, php 
 autocmd FileType html,php let g:user_emmet_mode='disabled'

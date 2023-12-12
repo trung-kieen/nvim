@@ -1,0 +1,82 @@
+snippet flex "Create basic flex container and flex item" b
+.flex-container {
+/* More about properties of flex container and flex item check out this link https://flexbox.malven.co/ */
+display: flex;
+}
+.flex-item {
+flex: 1;
+}
+endsnippet
+
+snippet grid "Create a sample grid" b
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr);
+  /* This is better for small screens, once min()) is better supported */
+  /* grid-template-columns: repeat(auto-fill, minmax(min(200px, 100%), 1fr)); */
+  gap: 1rem;
+}
+endsnippet
+
+snippet import-css "Import css other file"
+@import url("${1:color.css}"); 
+endsnippet
+
+	
+snippet hex-remy "Hex Remy Color" b
+var(--remy, #f5e0db)
+endsnippet
+
+snippet hex-angle-blue "Hex Angle Blue Color" b
+var(--angle-blue, #96aed0)
+endsnippet
+
+snippet hex-jungle-mist "Hex Jungle Mist Color" b
+var(--jungle-mist, #9bbfbf)
+endsnippet
+
+snippet hex-misty-rose "Hex Misty Rose Color" b
+var(--misty-rose, #f9e6e6)
+endsnippet
+
+snippet hex-bubble-blue "Hex Bubble Blue Color" b
+var(--bubble-blue, #e6f9f9)
+endsnippet
+
+snippet hex-yellow "Hex Yellow Color" b
+var(--yellow, #f9f0e6)
+endsnippet
+
+snippet hex-pink "Hex Pink Color" b
+var(--pink, #f9e6f0)
+endsnippet
+
+snippet hex-green "Hex Green Color" b
+var(--green, #e6f9f0)
+endsnippet
+
+snippet hex-blue "Hex Blue Color" b
+var(--blue, #e6f0f9)
+endsnippet
+
+snippet hex-dark-blue "Hex Dark Blue Color" b
+var(--dark-blue, #5e81ac)
+endsnippet
+
+snippet hex-dark-gray "Hex Dark Gray Color" b
+var(--dark-gray, #505250)
+endsnippet
+
+snippet hex-light-purple "Hex Light Purple Color" b
+var(--purple, #c8cafe)
+endsnippet
+
+snippet hex-surface0 "Hex Surface 0 Color" b
+var(--surface0, #f3f4f6)
+endsnippet
+
+snippet hex-surface1 "Hex Surface 1 Color" b
+var(--surface1, #f5f5f5)
+endsnippet
+
+

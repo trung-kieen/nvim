@@ -1,6 +1,4 @@
-" ----------------END CUSTOME CONFIG-----------------
-" Credit for some setup below: https://idie.ru/posts/vim-modern-cpp/
-" ----------------Copy config------------------------
+" Credit : https://idie.ru/posts/vim-modern-cpp/
 " Additional syntax highlight 
 let g:cpp_member_highlight = 1
 let g:tex_flavor='latex'

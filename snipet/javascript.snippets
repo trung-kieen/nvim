@@ -1,0 +1,114 @@
+snippet short-if "Write if statement in one line will make code more clean" 
+if (year == 2015) alert( 'You are right!' );
+endsnippet
+snippet fori "Loop over from 0 to n" b
+for (let i = 0; i < ${1:n}; i++) {
+  const element =  [i];
+  ${0} 
+}
+endsnippet
+	
+snippet spread-function-arguments "Allow pass of list array as parameter" b
+function myFunction(x, y, z) {
+console.log(x + y + z)
+}
+const args = [0, 1, 2, 5];
+// Result will be 3 = 0 + 1 + 2
+myFunction(...args);
+endsnippet
+snippet spread-array-copy "Array literal allow load all elements from a array to another. This is a another way to concatenate 2 array" b
+const parts = ["shoulders", "knees"];
+const lyrics = ["head", ...parts, "and", "toes"];
+//  ["head", "shoulders", "knees", "and", "toes"]
+endsnippet
+snippet spread-obj "Shorter syntax for merge obj than object.assign()" b 
+const obj1 = { foo: "bar", x: 42 };
+const obj2 = { foo: "baz", y: 13 };
+
+const clonedObj = { ...obj1 };
+// { foo: "bar", x: 42 }
+
+const mergedObj = { ...obj1, ...obj2 };
+// { foo: "baz", x: 42, y: 13 }
+endsnippet
+snippet addEventListener-sample "Sample for event listener" b
+btn.addEventListener('click', function (e) {
+  e.target.style.background = 'blue';
+});
+endsnippet
+
+snippet callback-sample "Create work with iterator with array" b 
+function myForEach(array, callback) {
+  for (let i = 0; i < array.length; i++) {
+    callback(array[i]); // This is when the callback function gets called, or executed
+  }
+}
+
+// You would call it like this:
+const myArry = [2, 3, 4, 2];
+myForEach(myArry, (item) => {
+  console.log(item + 2); 
+})
+endsnippet
+
+snippet object-create-function "Create object with constructor function (old way)" b
+
+function ${1:Hero}(${2:name}) {
+  this.$2= $2;
+}
+//{2:name}Each time create new object need to use new {3:age}eyword
+{2:name}et hero1 = new $1('Bjorn');
+endsnipp{3:age}t
+
+snippet object-create-class "Create object with class keyword " b
+class ${1:People} {
+  constructor(${2:name}, ${3:age}) {
+    this.$2 = $2;
+    this.$3 = $3;
+  }
+
+  greet() {
+  console.log(this.$2);
+  }
+}
+const person1 = new $1('Alice', 30);
+const person2 = new $1('Bob', 25);
+endsnippet
+
+snippet class-sample "Create and use class" b
+class ${1:People} {
+  constructor(${2:name}, ${3:age}) {
+    this.$2 = $2;
+    this.$3 = $3;
+  }
+
+  greet = () => {
+  console.log(this.$2);
+  }
+}
+const person1 = new $1('Alice', 30);
+const person2 = new $1('Bob', 25);
+person1.greet()
+endsnippet
+
+snippet namespace-sample "Create function namespace to avoid naming collisions" b
+var yourNamespace = {
+    foo: function() {
+      console.log("do something");
+    },
+    bar: function() {
+    }
+};
+yourNamespace.foo();
+endsnippet
+
+snippet "querySelector" "quick syntax to query dom" b
+document.querySelector("${1:.}") 
+endsnippet
+
+snippet document-ready "Load when browsers fully load DOM"
+$(document).ready(function() {
+  // Code to execute when the document is ready
+});
+
+endsnippet

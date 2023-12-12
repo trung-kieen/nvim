@@ -4,11 +4,11 @@ nnoremap <C-f> :Telescope live_grep<CR>
 inoremap <C-f> <esc> :Telescope live_grep<CR>
 
 " Search command with Telescope 
-nnoremap  ;f :Telescope find_files<CR>
-nnoremap  ;c :Telescope commands<CR>
-nnoremap  ;r :Telescope live_grep<CR>
+nnoremap  <leader>f :Telescope find_files<CR>
+nnoremap  <leader>c :Telescope commands<CR>
+nnoremap  <leader>r :Telescope live_grep<CR>
 nnoremap  \\ :Telescope buffers<CR>
-" nnoremap  ;; :Telescope help_tags<CR>
+" nnoremap  <leader>; :Telescope help_tags<CR>
 
 nnoremap <A-p> :Telescope projects<CR>
 

@@ -1,27 +1,33 @@
-"let mapleader=" " " This cause problems because so slow
-let g:user_emmet_leader_key=","
-let g:user_emmet_mode='i'
+let mapleader = " "
 
-nnoremap <silent> <C-m> :NvimTreeToggle <CR>
+" Find the same word for current buffer
+nnoremap <leader>F :let @/=''\|call inputsave()\|let @/ = input('Search: ')\|call inputrestore()<CR>1
+" Change function define to prototype but to deal with the case one line function
+nnoremap <A-2> :w<CR>f{a<Return><ESC>kyypk$r;o<ESC>j$%o<ESC>k%dip<ESC>Go<ESC>p<C-O>kk:w<CR>
+" Change function define to prototype and put definition to the end of file
+nnoremap <A-3> :w<CR>yypk$r;o<ESC>j$%o<ESC>k%dip<ESC>Go<ESC>p<C-O>kk:w<CR>
+" Increase all the number in line also work for multiline select in visual mode
+nnoremap <A-4> :s/\d\+/\=submatch(0)+1/g<CR>
+vnoremap <A-4> :s/\d\+/\=submatch(0)+1/g<CR>gv
 
+" Save and format feature
+" Uncomment to change between Autoformat and coc format action
+" nnoremap <silent> <leader>p :call CocActionAsync('runCommand', 'editor.action.formatDocument')<CR>
+nnoremap <silent> <leader>p :Autoformat<CR>
+
+" Toogle folding code
+" nnoremap <F10> :normal zi<CR>
+noremap <C-x> zA
+
+" j/k will move virtual lines (lines that wrap)
+noremap <silent> <expr> j (v:count == 0 ? 'gj' : 'j')
+noremap <silent> <expr> k (v:count == 0 ? 'gk' : 'k')
 
 " Map <C-s> in normal and insert mode for specific file types
 nnoremap <C-s> :w<CR>
 inoremap <C-s> <Esc>:w<CR>
 
-" Find the same word for current buffer
-nnoremap <leader>F :let @/=''\|call inputsave()\|let @/ = input('Search: ')\|call inputrestore()<CR>1
-" Change function define to prototype but to deal with the case one line function 
-nnoremap <A-2> :w<CR>f{a<Return><ESC>kyypk$r;o<ESC>j$%o<ESC>k%dip<ESC>Go<ESC>p<C-O>kk:w<CR>
-" Change function define to prototype and put definition to the end of file 
-nnoremap <A-3> :w<CR>yypk$r;o<ESC>j$%o<ESC>k%dip<ESC>Go<ESC>p<C-O>kk:w<CR>
-" Increase all the number in line also work for multiline select in visual mode 
-nnoremap <A-4> :s/\d\+/\=submatch(0)+1/g<CR>
-vnoremap <A-4> :s/\d\+/\=submatch(0)+1/g<CR>gv
-" Tagbar
-nmap <A-7> :TagbarToggle<CR>
-
-" Move line around 
+" Move line around
 nnoremap <S-Up> :m-2<CR>
 nnoremap <A-S-k> :m-2<CR>
 nnoremap <S-Down> :m+<CR>
@@ -31,49 +37,4 @@ inoremap <A-S-k> <Esc>:m-2<CR>
 inoremap <S-Down> <Esc>:m+<CR>
 inoremap <A-S-j> <Esc>:m+<CR>
 
-
-
-" Save and format
-nnoremap <silent> ;p :call CocActionAsync('runCommand', 'editor.action.formatDocument')<CR>
-
-
-" Find and replace in current pwd recursive
-nnoremap ;/ :argdo %s/foo/bar/g
-
-
-imap <Tab>     <Plug>(ultisnips-expand)
-smap <Tab>     <Plug>(ultisnips-expand)
-
-let g:UltiSnipsExpandTrigger="<tab>"
-
-" Fuck it not work
-let g:UltiSnipsJumpForwardTrigger='<tab>'
-let g:UltiSnipsJumpBackwardTrigger='<s-tab>'
-" let g:UltiSnipsJumpBackwardTrigger='<c-k>'
-
-" Search Snippets from custome snippets folder and vim-snippet plug
-nnoremap <A-s> :Snippets<CR>
-nnoremap <silent>;s :Snippets<CR>
-inoremap <A-s> <Esc>:Snippets<CR>
-
-noremap <C-x> zA
-
-noremap <C-t> :Vista!!<CR>
-inoremap <C-t> <Esc>:Vista!!<CR>
-
-
-nnoremap <F10> :normal zi<CR>
-
-
-
-" CamelCaseMotion change default motion in variable and function 
-map <silent> w <Plug>CamelCaseMotion_w
-map <silent> b <Plug>CamelCaseMotion_b
-map <silent> e <Plug>CamelCaseMotion_e
-map <silent> ge <Plug>CamelCaseMotion_ge
-
-sunmap w
-sunmap b
-sunmap e
-sunmap ge
 
