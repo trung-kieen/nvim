@@ -1,4 +1,38 @@
 {
   "codeLens.enable": true,
-  "java.referencesCodeLens.enabled": true
+  "java.referencesCodeLens.enabled": true,
+  "prettier.requireConfig": true,
+
+  "tslint.enable": true,
+  "tslint.autoFixOnSave": true,
+
+  "coc.preferences.formatOnSaveFiletypes": [
+    "css",
+    "markdown",
+    "Markdown",
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+  "settings": {
+    "java": {
+      "workspace": {
+        "dependencySources": "Maven"
+      }
+    }
+  },
+  "snippets.ultisnips.pythonPrompt": false,
+  "python.pythonPath": "/usr/bin/python",
+  "python.venvPath": "~/venvs/",
+  "python.jediPath": "~/venvs/jedi/lib/python3.11/site-packages/",
+  "python.jediEnabled": true,
+  "suggest.timeout": 5000,
+
+  "python.formatting.provider": "black",
+  "python.formatting.blackPath": "~/venvs/black/bin",
+
+  "python.linting.pylintEnabled": true,
+  "python.linting.flake8Enabled": false,
+  "python.linting.pylintPath": "~/venvs/pylint/bin"
 }

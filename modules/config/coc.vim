@@ -33,3 +33,7 @@ set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
 " Disable emmet when not use file suffic html, php 
 autocmd FileType html,php let g:user_emmet_mode='disabled'
 
+" https://blog.claude.nl/posts/setup-neovim-as-python-ide-with-virtualenvs/
+" Neovim docs will very helpful to understand python env path 
+" https://neovim.io/doc/user/provider.html#python-virtualenv
+let g:python3_host_prog="/usr/bin/python"
