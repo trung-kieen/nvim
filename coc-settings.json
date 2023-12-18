@@ -8,12 +8,11 @@
 
   "coc.preferences.formatOnSaveFiletypes": [
     "css",
-    "markdown",
-    "Markdown",
     "javascript",
     "javascriptreact",
     "typescript",
-    "typescriptreact"
+    "typescriptreact",
+    "java"
   ],
   "settings": {
     "java": {

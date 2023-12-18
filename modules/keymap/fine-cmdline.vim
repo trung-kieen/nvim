@@ -1,0 +1,2 @@
+
+nnoremap : <cmd>FineCmdline<CR>

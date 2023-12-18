@@ -105,6 +105,16 @@ else
 fi
 endsnippet
 
+
+snippet if-command "Check if command exist in shell" 
+if command -v git &>/dev/null; then
+    echo "git exists"
+else
+    echo "git does not exist"
+fi
+endsnippet
+
+
 snippet notify "Description"
 notify-send -h string:fgcolor:#C8CAFE "${1:All repo have been updated to github.}"
 endsnippet

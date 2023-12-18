@@ -16,7 +16,7 @@ vnoremap <A-4> :s/\d\+/\=submatch(0)+1/g<CR>gv
 nnoremap <silent> <leader>fm :Autoformat<CR>
 
 " Toogle folding code
-" nnoremap <F10> :normal zi<CR>
+nnoremap <F10> :normal zi<CR>
 noremap <C-x> zA
 
 " j/k will move virtual lines (lines that wrap)

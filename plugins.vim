@@ -134,6 +134,11 @@ Plug 'bkad/CamelCaseMotion'
 Plug 'Pocco81/true-zen.nvim'
 
 
-" Format like coc-format but work well with java :)) 
 Plug 'vim-autoformat/vim-autoformat'
+
+
+Plug 'MunifTanjim/nui.nvim'
+Plug 'VonHeikemen/fine-cmdline.nvim'
+
 call plug#end()
+

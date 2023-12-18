@@ -1,6 +1,6 @@
 
 
-source $HOME/.config/nvim/modules/plugins.vim
+source $HOME/.config/nvim/plugins.vim
 source $HOME/.config/nvim/modules/settings.vim
 source $HOME/.config/nvim/modules/configs.vim
 source $HOME/.config/nvim/modules/lua.vim
@@ -16,6 +16,7 @@ source $HOME/.config/nvim/modules/keymap/camel_case_motion.vim
 source $HOME/.config/nvim/modules/keymap/tag_overview.vim
 source $HOME/.config/nvim/modules/keymap/util_snipets.vim
 source $HOME/.config/nvim/modules/keymap/nvim_tree.vim
+source $HOME/.config/nvim/modules/keymap/fine-cmdline.vim
 " source $HOME/.config/nvim/modules/keymap/ctrlp.vim
 
 
