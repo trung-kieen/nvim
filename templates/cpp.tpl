@@ -1,4 +1,6 @@
 #include <bits/stdc++.h>
+using std::cout;
+using std::cin;
 /*
 Authur: Nguyen Khac Trung Kien
 Email: trungkien4869@gmail.com

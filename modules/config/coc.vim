@@ -23,7 +23,6 @@ let g:coc_global_extensions = [
   \ 'coc-highlight',
   \ 'coc-spell-checker',
   \ 'coc-diagnostic',
-  \ 'coc-snippets'
   \ ]
 
   " \ 'coc-tabnine',

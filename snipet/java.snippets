@@ -66,3 +66,33 @@ try (Scanner scanner = new Scanner(Paths.get("records.txt"))) {
     }
 }
 endsnippet
+snippet typeCastIntegerHandler "With handle exception" b
+int foo;
+try {
+   foo = Integer.parseInt(myString);
+}
+catch (NumberFormatException e) {
+   foo = 0;
+}
+endsnippet
+
+snippet typeCastInteger "Without handle exception" b
+String myString = "1234";
+int foo = Integer.parseInt(myString);
+endsnippet
+
+snippet arryaListPrint "Print all value int array" b
+myList.stream().forEach(System.out::println);
+endsnippet
+
+snippet colectionSum "Handle collection value" b
+int sum = numbers.stream().mapToInt(s -> Integer.valueOf(s)).sum();
+endsnippet
+
+
+snippet collectionToCollection "Handle collection value and make result to a new collection" b
+ArrayList<Integer> positives = values.stream()
+    .filter(value -> value > 0)
+    .collect(Collectors.toCollection(ArrayList::new));
+endsnippet
+
