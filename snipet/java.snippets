@@ -96,3 +96,29 @@ ArrayList<Integer> positives = values.stream()
     .collect(Collectors.toCollection(ArrayList::new));
 endsnippet
 
+
+snippet arraylist_filter_first "get collection  create operation filter which elment match contrain and then return first match"
+public MonHoc layTheoTen(String ten) {
+      MonHoc match = danhSachMonHoc.stream().filter(monHoc ->  monHoc.getTen().equals(ten)).findFirst().orElse(null);
+return match ;
+}
+endsnippet 
+
+
+snippet equals_method "Method use by arraylist and hashmap to implment contains method"
+   public boolean equals(Object other) {
+      if (this == other) {
+         return true;
+      } else {
+         if (!(other instanceof ${1:MonHoc})) {
+            return false;
+         }
+         $1 compare$1 = ($1) other;
+         if (compare$1.getTen().equals(this.getTen()) && compare$1.getMa().equals(this.getMa())) {
+            return true;
+         }
+      }
+      return false;
+   }
+
+endsnippet

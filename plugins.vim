@@ -139,6 +139,6 @@ Plug 'vim-autoformat/vim-autoformat'
 
 Plug 'MunifTanjim/nui.nvim'
 Plug 'VonHeikemen/fine-cmdline.nvim'
-
+Plug 'nicwest/vim-camelsnek'
 call plug#end()
 
