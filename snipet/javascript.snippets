@@ -124,3 +124,10 @@ for (const [key, value] of Object.entries(object1)) {
   console.log(`${key}: ${value}`);
 }
 endsnippet
+
+
+snippet test_jest "Write test case for js code"
+test("Link list start size ", () => {
+  expect(${1:myFunction()}).toBe(0);
+});
+endsnippet

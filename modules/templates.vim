@@ -9,3 +9,4 @@ autocmd BufNewFile reset.css 0r ~/.config/nvim/templates/normalize.css
 autocmd BufNewFile style.css 0r ~/.config/nvim/templates/style.css
 autocmd BufNewFile color.css   0r ~/.config/nvim/templates/custom-color.css
 autocmd BufNewFile index.html 0r ~/.config/nvim/templates/index.html
+autocmd BufNewFile *.test.js 0r ~/.config/nvim/templates/jest.js
