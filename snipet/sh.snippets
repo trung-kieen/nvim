@@ -133,3 +133,13 @@ ${1:DIR}="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 endsnippet
 
 
+
+snippet file_extension "File with extension / no extension / remove path from input file path"
+fullfile="hello/world.txt"
+filename=$(basename -- "$fullfile")
+extension="${filename##*.}"
+filename_no_ext="${filename%.*}"
+endsnippet
+snippet default_value "Set value of variable base on other, if this variable is not set/ null set this variable with default value" b
+output_folder=${2:=default_value}
+endsnippet
